@@ -26,7 +26,7 @@ public class EmployeeController {
     // to get the list of all
     // the employees
     @GetMapping(
-            path = "",
+            path = "/",
             produces = "application/json"
     )
 
