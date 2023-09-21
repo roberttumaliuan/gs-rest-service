@@ -1,7 +1,10 @@
-package com.example.restservice;
+package com.example.restservice.controllers;
 
 import java.net.URI;
+
+import com.example.restservice.RestServiceApplication;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,11 +15,12 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 // Import the above-defined classes
 // to use the properties of those
 // classes
-import com.example.restservice.Employee;
-import com.example.restservice.Employees;
-import com.example.restservice.EmployeeManager;
+import com.example.restservice.entities.Employee;
+import com.example.restservice.services.Employees;
+import com.example.restservice.repo.EmployeeManager;
 
 // Creating the REST controller
+@SpringBootApplication
 @RestController
 @RequestMapping(path = "/employees")
 public class EmployeeController {

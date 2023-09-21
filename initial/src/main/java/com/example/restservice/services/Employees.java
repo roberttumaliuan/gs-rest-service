@@ -1,4 +1,6 @@
-package com.example.restservice;
+package com.example.restservice.services;
+import com.example.restservice.entities.Employee;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Employees {

@@ -1,10 +1,12 @@
-package com.example.restservice;
+package com.example.restservice.repo;
 
+import com.example.restservice.entities.Employee;
+import com.example.restservice.services.Employees;
 import org.springframework.stereotype.Repository;
 // Importing the employees class to
 // use the defined properties
 // in this class
-import com.example.restservice.Employees;
+
 @Repository
 // Class to create a list
 // of employees
@@ -42,8 +44,7 @@ public class EmployeeManager {
     }
 
     // Method to return the list
-    public Employees getAllEmployees()
-    {
+    public Employees getAllEmployees() {
         return list;
     }
 

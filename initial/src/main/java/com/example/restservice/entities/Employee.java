@@ -1,4 +1,10 @@
-package com.example.restservice;
+package com.example.restservice.entities;
+
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import org.springframework.lang.NonNull;
+
+@JsonPOJOBuilder
+
 public class Employee {
     public Employee() {}
 
